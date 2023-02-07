@@ -65,22 +65,9 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
-      <Head>
-        <title>Chat Simplifier</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <a
-          className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
-          href="https://github.com/zhengbangbo/chat-simplifier"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github />
-          <p>Star on GitHub</p>
-        </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           聊天内容简化器
         </h1>
@@ -138,17 +125,6 @@ const Home: NextPage = () => {
               <LoadingDots color="white" style="large" />
             </button>
           )}
-          <div className="mt-1 items-center space-x-3">
-            <span className="text-slate-200">
-              不建议上传过于隐私的聊天内容，详情查看
-              <a
-                className="text-blue-200 hover:text-blue-400"
-                href="https://github.com/zhengbangbo/chat-simplifier/wiki/Privacy-Policy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >《隐私声明》</a>
-            </span>
-          </div>
         </div>
         <Toaster
           position="top-center"
