@@ -1,19 +1,18 @@
 # [Chat Simplifier](https://chat-simplifier.vercel.app/)
 [![](https://img.shields.io/badge/chat-on%20discord-7289da.svg?sanitize=true)](https://chat.imzbb.cc)
 
-This project simplify chat content for you using AI.
+这个项目使用AI为您简化聊天内容。
 
 [![Chat Simplifier](./public/screenshot.png)](https://chat-simplifier.vercel.app/)
 
-## How it works
+## 它是如何工作的？
 
-This project uses the [OpenAI GPT-3 API](https://openai.com/api/) (specifically, text-davinci-003) and [Vercel Edge functions](https://vercel.com/features/edge-functions) with streaming. It constructs a prompt based on the form and user input, sends it to the GPT-3 API via a Vercel Edge function, then streams the response back to the application.
+该项目使用[OpenAI GPT-3 API]和[Vercel Edge函数]进行流式处理。它根据表单和用户输入构造一个提示，通过Vercel Edge函数将其发送到GPT-3API，然后将响应流回到应用程序
 
 ## Running Locally
 
-After cloning the repo, go to [OpenAI](https://beta.openai.com/account/api-keys) to make an account and put your API key in a file called `.env`.
-
-Then, run the application in the command line and it will be available at `http://localhost:3000`.
+克隆该项目后，去[OpenAI](https://beta.openai.com/account/api-keys)创建帐户并将API密钥放入名为“.env”的文件中。
+然后，在命令行中输入以下命令运行应用程序，使用 `http://localhost:3000`打开网页。
 
 ```bash
 npm run dev
